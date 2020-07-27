@@ -40,10 +40,16 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    cursor: pointer;
+}
+
+.card_image_container {
+    height: 140px;
 }
 
 .card_image_container img {
     width: 100%;
+    height: 100%;
     border-radius: 15px;
 }
 
@@ -70,56 +76,8 @@ header {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     margin-top: 50px;
+    margin-bottom: 0;
     padding: 24px;
     text-align: center;
     color: #999999;
-}
-
-/* ==== MODAL ==== */
-
-.modal_overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.modal {
-    background-color: white;
-    border-radius: 16px;
-    width: 660px;
-    height: 413px;
-    margin: 15vw auto;
-    position: relative;
-}
-
-.modal .close_modal {
-    color: #000000;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    cursor: pointer;
-}
-
-/* ==== MODAL.ACTIVE ==== */
-
-.modal_overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal_content {
-    width: 85%;
-    margin: 0px auto;
-}
-
-.modal_content img {
-    margin-top: 40px;
-}
-
-.modal_content p {
-    text-align: center;
 }
