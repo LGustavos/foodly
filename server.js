@@ -3,9 +3,9 @@ const nunjucks = require('nunjucks')
 
 
 const server = express()
-
 server.use(express.static('assets'))
 server.use(express.static('public'))
+server.use(express.static('js'))
 
 server.set("view engine", "html")
 nunjucks.configure("src", {
@@ -13,8 +13,8 @@ nunjucks.configure("src", {
 })
 
 
-server.get("/", (req, res) => {
-    return res.render("index")
+server.get("/home", (req, res) => {
+    return res.render("home")
 })
 
 server.get("/sobre", (req, res) => {

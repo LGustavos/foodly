@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="../menu.css">
+<title>Foodly</title>
+{% endblock %}
+
+{% block menu %}
+<div class="menu">
+    <img src="../logo.png" alt="Foodly">
+    <a href="/sobre">Sobre</a>
+    <a href="/receitas">Receitas</a>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="content_banner">
+    <div class="text">
+        <h1>As melhores receitas</h1>
+        <h2>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro</h2>
+    </div>
+    <img src="../chef.png" alt="Chef">
+</div>
+
+<div class="title_receitas">
+    <h1>Mais acessadas</h1>
+</div>
+<section class="cards_receitas">
+    <div class="card">
+        <div class="card_image_container">
+            <img src="../burger.png" alt="Burguer">
+        </div>
+        <div class="card_content">
+            <p>Triplo bacon burguer</p>
+        </div>
+        <div class="autor_receita">
+            <p>por Jorge Relato</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card_image_container">
+            <img src="../pizza.png" alt="Pizza">
+        </div>
+        <div class="card_content">
+            <p>Pizza 4 estações</p>
+        </div>
+        <div class="autor_receita">
+            <p>por Fabiana Melo</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card_image_container">
+            <img src="../espaguete.png" alt="Espaguete">
+        </div>
+        <div class="card_content">
+            <p>Espaguete ao alho</p>
+        </div>
+        <div class="autor_receita">
+            <p>por Júlia Kinoto</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card_image_container">
+            <img src="../lasanha.png" alt="Lasanha">
+        </div>
+        <div class="card_content">
+            <p>Lasanha mac n'cheese</p>
+        </div>
+        <div class="autor_receita">
+            <p>por Juliano Vieira</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card_image_container">
+            <img src="../doce.png" alt="Doce">
+        </div>
+        <div class="card_content">
+            <p>Docinho pão-do-céu</p>
+        </div>
+        <div class="autor_receita">
+            <p>por Ricardo Golvea</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card_image_container">
+            <img src="../asinhas.png" alt="Asinhas">
+        </div>
+        <div class="card_content">
+            <p>Asinhas de frango ao barbecue</p>
+        </div>
+        <div class="autor_receita">
+            <p>por Vania Steroski</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
