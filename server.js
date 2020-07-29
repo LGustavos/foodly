@@ -28,8 +28,7 @@ server.get("/receitas", (req, res) => {
 server.get("/detalhes/:index", (req, res) => {
     const receitas = details
     const receitasIndex = req.params.index
-
-    console.log(receitas[receitasIndex])
+    return res.render("detalhes", { item: receitas[receitasIndex] })
 })
 
 server.listen(5000, () => {

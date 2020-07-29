@@ -1,0 +1,51 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="../detalhes.css">
+    <title>Detalhes | Foodly</title>
+{% endblock %}
+
+{% block menu %}
+    <div class="menu">
+        <img src="../logo.png" alt="Foodly">
+        <a href="/home">Início</a>
+        <a href="/sobre">Sobre</a>
+        <a href="/receitas">Receitas</a>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <section class="card_banner">
+        <div class="card_receita">
+            <img src="{{ item.image }}" alt="Imagem de {{ item.image }}">
+        </div>
+        <div class="receita_title">
+            <p>{{ item.title }}</p>
+        </div>
+        <div class="receita_author">
+            <p>{{ item.author }}</p>
+        </div>
+        <div class="ingredientes_receita">
+            <h1>Ingredientes</h1>
+            <ul>
+                {% for ingredient in item.ingredients%}
+                    <li>{{ ingredient }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="modo_preparo_receita">
+            <h1>Modo de preparo</h1>
+            <ul>
+                {% for item in item.preparation %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="info_receitas">
+            <h1>Informações adicionais</h1>
+            <ul>
+                <p>{{ item.information }}</p>
+            </ul>
+        </div>
+    </section>
+{% endblock %}

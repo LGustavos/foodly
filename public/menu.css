@@ -112,12 +112,15 @@ header {
 
 .footer {
     background: #EEEEEE;
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    bottom: 0;
 }
 
 .footer h2 {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
-    margin-top: 50px;
     padding: 24px;
     text-align: center;
     color: #999999;
