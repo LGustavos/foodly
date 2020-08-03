@@ -75,12 +75,28 @@ header {
     line-height: 28px;
 }
 
+.ingredientes_receita span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #999999;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
 .modo_preparo_receita h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     color: #111111;
     margin-top: 40px;
     margin-bottom: 20px;
+}
+
+.modo_preparo_receita span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #999999;
+    margin-left: 15px;
+    cursor: pointer;
 }
 
 .modo_preparo_receita ul li {
@@ -97,6 +113,14 @@ header {
     color: #111111;
     margin-top: 40px;
     margin-bottom: 20px;
+}
+
+.info_receitas span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #999999;
+    margin-left: 15px;
+    cursor: pointer;
 }
 
 .info_receitas p {
